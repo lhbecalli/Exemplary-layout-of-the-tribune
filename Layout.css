@@ -1,33 +1,34 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
-
-header {
-  background: #f2f2f2;
-  border-bottom: 2px solid #ddd;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
 }
+
 
 .topbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  background-color: #e6e6e6;
   padding: 10px 20px;
 }
 
 #menuBtn {
+  font-size: 22px;
   background: none;
   border: none;
-  font-size: 28px;
   cursor: pointer;
 }
 
 #logo {
-  height: 70px;
+  height: 60px;
+  width: auto;
 }
 
 #data {
@@ -36,76 +37,60 @@ header {
 }
 
 
+nav {
+  border-top: 2px solid #0074c7;
+  border-bottom: 2px solid #0074c7;
+  text-align: center;
+}
+
 nav ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 0;
-  margin: 10px 0;
-  list-style: none;
-  border-top: 1px solid #0073e6;
-  border-bottom: 1px solid #0073e6;
+  gap: 40px;
   padding: 10px 0;
 }
 
-nav li {
-  border-right: 1px solid #0073e6;
-  padding: 0 30px;
-}
-
-nav li:last-child {
-  border-right: none;
-}
-
-nav a {
+nav ul li a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
   font-size: 18px;
 }
 
-nav a:hover {
-  color: #0073e6;
+/* Área principal */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
-
-main {
+.noticias {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 20px;
-  padding: 20px;
 }
 
-.noticia {
-  background: #fff;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.08);
-}
-
+/* Notícias gerais */
 .noticia img {
   max-width: 100%;
-  border-radius: 6px;
-  margin-top: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
+.noticia p {
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Notícia central destaque do Lula */
+.destaque {
+  text-align: center;
+}
 
 .destaque h1 {
-  font-size: 28px;
-  line-height: 1.3;
-  color: #4d2600; 
-  margin: 10px 0;
-}
-
-.destaque h3 {
-  color: #b30000; 
+  font-size: 26px;
   font-weight: bold;
-  margin-bottom: 6px;
-}
-
-.destaque p {
-  color: #555;
-  font-size: 16px;
+  color: #5a3300;
 }
 
 .destaque-vermelho {
@@ -115,35 +100,28 @@ main {
 
 /* Categorias */
 .categoria {
-  margin-bottom: 6px;
   font-size: 16px;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 
-.categoria.brasil {
+.brasil {
   color: brown;
 }
 
-.categoria.confira {
+.confira {
   color: green;
 }
 
-.categoria.alerta {
-  color: orange;
+.alerta {
+  color: red;
 }
 
-/* Notícia comum */
-.noticia p {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-
+/* Rodapé */
 footer {
+  margin-top: 30px;
   text-align: right;
+  background: #e6e6e6;
   padding: 10px 20px;
-  background: #f2f2f2;
-  border-top: 2px solid #ddd;
-  font-size: 12px;
-  color: #555;
+  font-size: 14px;
 }

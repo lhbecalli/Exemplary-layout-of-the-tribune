@@ -4,73 +4,206 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TV Tribuna</title>
-  <link rel="shortcut icon" href="https://yt3.googleusercontent.com/rS2xxbfP3lZcrqMBG5IF7KJQzV_UA_GsYRch-B9eJTGxfWVljHKNAd_s1DukIwnQx5lyDN61=s900-c-k-c0x00ffffff-no-rj" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="Layout.css">
+  <link rel = "shortcut icon" href = "https://upload.wikimedia.org/wikipedia/commons/7/7b/TV_Tribuna_logo.png" type = "image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: #000;
+    }
+
+    
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #e6e6e6;
+      padding: 10px 20px;
+    }
+
+    #menuBtn {
+      font-size: 22px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    #logo {
+      height: 60px;
+      width: auto;
+    }
+
+    #data {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav {
+      border-top: 2px solid #0074c7;
+      border-bottom: 2px solid #0074c7;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      padding: 10px 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    .noticias {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+    }
+z
+    /* Jornal O Tempo */
+    .noticias article:nth-child(1) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+
+    /* Lula destaque */
+    .noticias article:nth-child(2) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+    }
+
+    /* Seleção */
+    .noticias article:nth-child(3) {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+
+    /* Alerta */
+    .noticias article:nth-child(4) {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+
+    /* Estilo de cada notícia */
+    .noticia img {
+      max-width: 100%;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .destaque h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #5a3300;
+      margin-bottom: 10px;
+    }
+
+    .destaque-vermelho {
+      color: red;
+    }
+
+    .destaque p {
+      color: #777;
+      margin-top: 10px;
+    }
+
+    .categoria {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .brasil { color: brown; }
+    .confira { color: green; }
+    .alerta { color: red; }
+
+    footer {
+      margin-top: 30px;
+      text-align: right;
+      background: #e6e6e6;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  
   <header>
     <div class="topbar">
       <button id="menuBtn">☰ Menu</button>
-
       <div style="text-align: center;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/TV_Tribuna_logo.png" 
-        alt="Logo TV Tribuna"
-        id="logo"
-        height="100"
-        width="100">
+        <img src="https://tribunaonline.com.br/themes/TON/assets/img/logo-tribuna-online_colorido.webp" id="logo" alt="Logo TV Tribuna">
       </div>
-
       <span id="data">31/08/2025</span>
     </div>
 
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portal</a></li>
-        <li><a href="#">Notícias</a></li>
+        <li><a href="https://tribunaonline.com.br/?home=espirito_santo">Home</a></li>
+        <li><a href="https://atribuna.tribunaonline.com.br/jornal-a-tribuna/?_gl=1*1j46ehs*_gcl_au*MTY2NjUwNDEwNy4xNzU2NDA1MzAw">Portal</a></li>
+        <li><a href="https://tribunaonline.com.br/tv-tribuna">Notícias</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Conteúdo principal -->
   <main>
     <section class="noticias">
-      
-      <!-- (jornal O Tempo) -->
+
+      <!-- Jornal -->
       <article class="noticia">
-        <img src="img/otempo.png" alt="Capa do jornal O Tempo com notícia sobre Minas Gerais">
-        <a href="#"><h2>O Tempo</h2></a>
-        <p>Minas Gerais ganha tempo na negociação da dívida</p>
+        <a href = https://www.vercapas.com.br/edicao/capa/o-tempo/2024-08-02><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgOFeEgZ8r6offysqPi8ZsiBoGQxuhOSbNA&s" alt="Capa jornal O Tempo"
+        height="500px" width="400px">
+        <HR>
+          <br>
+        <A href=https://www.vercapas.com.br/edicao/capa/o-tempo/2024-08-02 >Confira a capa do jornal O Tempo desta segunda-feira (01/09/2025).</p> </a>
+
       </article>
 
-      <!-- (Lula Picanha) -->
+      <!-- Lula -->
       <article class="noticia destaque">
-        <h3 class="categoria brasil">Brasil</h3>
-        <h1>Lula decreta Picanha gratuita a todos brasileiros que VOTARAM <span class="destaque-vermelho">NELE</span>.</h1>
+        <h3 class="categoria brasil"> <a href=https://humanidades.com/br/brasil> Brasil</h3></a>
+        <h1>Lula decreta Picanha gratuita a todos brasileiros que VOTARAM <span class="destaque-vermelho"> NELE</span>.</h1>
         <p>O presidente Luiz Inácio Lula da Silva decretou a partir dessa segunda feira (01) que todos seus eleitores irão ganhar Picanha de graça.</p>
+        <img src = "https://imagenes.elpais.com/resizer/v2/QSSWEVGNLANTY2EJE5WBYNYKBI.jpg?auth=34111dc98bdcf8871b272df8a93f39804a7fc34fd9d10460af736076d2283625&width=1960" alt="Lula com Picanha" height="698px" width="600px">
       </article>
 
-      <!-- (Escalação Seleção Brasileira) -->
+      <!-- Seleção -->
       <article class="noticia">
-        <h3 class="categoria confira">CONFIRA</h3>
+        <h3 class="categoria confira"> <a href=https://ge.globo.com/futebol/selecao-brasileira/noticia/2025/08/25/convocados-da-selecao-veja-a-lista-de-carlo-ancelotti-para-enfrentar-chile-e-bolivia.ghtml> CONFIRA</h3> <a>
         <p>Técnico da Seleção Brasileira Carlos Ancelotti escala novo elenco para Copa do Mundo de 2026.</p>
-        <img src="https://preview.redd.it/prov%C3%A1vel-escala%C3%A7%C3%A3o-da-sele%C3%A7%C3%A3o-brasileira-contra-o-peru-v0-gj77es0nklud1.jpeg?width=1080&crop=smart&auto=webp&s=35b7a5adfdddf2ed6e090ad508aeb161894aaa39"
-        alt="Escalação provável da Seleção Brasileira para a Copa 2026">
+        <img src="https://preview.redd.it/prov%C3%A1vel-escala%C3%A7%C3%A3o-da-sele%C3%A7%C3%A3o-brasileira-contra-o-peru-v0-gj77es0nklud1.jpeg?width=1080&crop=smart&auto=webp&s=35b7a5adfdddf2ed6e090ad508aeb161894aaa39" height = "500px" alt="Escalação da Seleção">
       </article>
 
-      <!-- (Alerta Defesa Civil) -->
+      <!-- Alerta -->
       <article class="noticia">
-        <h3 class="categoria alerta">Alerta</h3>
+        <h3 class="categoria alerta"><a href=#> Alerta</h3></a>
         <p>A <b>Defesa Civil</b> emitiu uma nota de segurança a todos moradores capixabas residentes do Norte do estado (ES) para um possível temporal para esse fim de semana.</p>
-        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKF7Zgs_aD3mywpEFxhHLUS4a4flrSL1a9xs6Reidved9PpVXE" alt="Previsão de temporal no Espírito Santo">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKF7Zgs_aD3mywpEFxhHLUS4a4flrSL1a9xs6Reidved9PpVXE" alt="Previsão de chuva">
       </article>
 
     </section>
+
+    <img src = https://tribunaonline.com.br/themes/TON/assets/img/logo-jornal-a-tribuna_colorido.png aht="80px" width="200px" style="display: block; margin: 10px auto;">
   </main>
 
   <footer>
-    <p>Layout exemplar, By Luiz Henrique Becalli</p>
+    Layout exemplar, By Luiz Henrique Becalli
   </footer>
 </body>
 </html>
